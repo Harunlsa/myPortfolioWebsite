@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+@theme {
+  --color-inverse-primary: #0053db;
+  --color-tertiary: #bcc7de;
+  --color-on-background: #e5e2e1;
+  --color-primary: #b4c5ff;
+  --color-on-secondary-container: #00515d;
+  --color-on-error: #690005;
+  --color-on-tertiary-container: #ecf1ff;
+  --color-surface-container-low: #1c1b1b;
+  --color-inverse-surface: #e5e2e1;
+  --color-on-primary: #002a78;
+  --color-on-secondary-fixed: #001f25;
+  --color-tertiary-container: #636e83;
+  --color-surface-variant: #353534;
+  --color-surface-dim: #131313;
+  --color-on-primary-container: #eeefff;
+  --color-on-primary-fixed: #00174b;
+  --color-outline: #8d90a0;
+  --color-secondary-container: #00cbe6;
+  --color-on-primary-fixed-variant: #003ea8;
+  --color-error: #ffb4ab;
+  --color-on-secondary: #00363e;
+  --color-secondary-fixed: #a2eeff;
+  --color-error-container: #93000a;
+  --color-primary-container: #2563eb;
+  --color-on-tertiary-fixed-variant: #3c475a;
+  --color-surface-container: #201f1f;
+  --color-on-error-container: #ffdad6;
+  --color-secondary-fixed-dim: #2fd9f4;
+  --color-tertiary-fixed: #d8e3fb;
+  --color-primary-fixed-dim: #b4c5ff;
+  --color-on-secondary-fixed-variant: #004e5a;
+  --color-on-surface-variant: #c3c6d7;
+  --color-tertiary-fixed-dim: #bcc7de;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface: #131313;
+  --color-inverse-on-surface: #313030;
+  --color-surface-bright: #3a3939;
+  --color-on-tertiary: #263143;
+  --color-surface-container-high: #2a2a2a;
+  --color-on-surface: #e5e2e1;
+  --color-outline-variant: #434655;
+  --color-surface-tint: #b4c5ff;
+  --color-background: #131313;
+  --color-primary-fixed: #dbe1ff;
+  --color-on-tertiary-fixed: #111c2d;
+  --color-secondary: #5de6ff;
+  --color-surface-container-highest: #353534;
+
+  --radius-default: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  --spacing-gutter: 24px;
+  --spacing-max-width: 1200px;
+  --spacing-margin-mobile: 20px;
+  --spacing-unit: 4px;
+  --spacing-margin-desktop: 80px;
+
+  --font-body-md: Inter, sans-serif;
+  --font-headline-xl: Poppins, sans-serif;
+  --font-body-sm: Inter, sans-serif;
+  --font-headline-lg-mobile: Poppins, sans-serif;
+  --font-headline-lg: Poppins, sans-serif;
+  --font-code-md: JetBrains Mono, monospace;
+  --font-label-caps: JetBrains Mono, monospace;
+
+  --animate-blink: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+body {
+  background-color: #131313;
+  color: #e5e2e1;
+  scroll-behavior: smooth;
+}
+
+.glass-card {
+  background: #ffffff08;
+  backdrop-filter: blur(16px);
+  border: 1px solid #ffffff15;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  background: #ffffff12;
+  border-color: #ffffff25;
+  box-shadow: 0px 0px 15px rgba(37, 99, 235, 0.15);
+}
+
+.typing-container::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+.aurora-blur {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, rgba(93, 230, 255, 0.05) 50%, transparent 100%);
+  filter: blur(60px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero-title {
+  text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* Custom Markdown Rendering Styles for DesignDoc */
+.prose h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #434655;
+  padding-bottom: 0.5rem;
+}
+.prose h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #b4c5ff;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+.prose h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #5de6ff;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.prose p {
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+  color: #c3c6d7;
+}
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: #c3c6d7;
+}
+.prose li {
+  margin-bottom: 0.5rem;
+}
+.prose code {
+  background-color: #1c1b1b;
+  color: #5de6ff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: JetBrains Mono, monospace;
+  font-size: 0.875rem;
+}
+.prose pre {
+  background-color: #0e0e0e;
+  border: 1px solid #434655;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+}
+.prose pre code {
+  background-color: transparent;
+  color: #bcc7de;
+  padding: 0;
+}
+.prose blockquote {
+  border-left: 4px solid #b4c5ff;
+  padding-left: 1rem;
+  font-style: italic;
+  margin-bottom: 1.25rem;
+  color: #e5e2e1;
+  background-color: #ffffff04;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.prose a {
+  color: #b4c5ff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.prose a:hover {
+  color: #5de6ff;
+}
