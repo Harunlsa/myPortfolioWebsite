@@ -10,6 +10,8 @@ export default function ShaderBackground() {
     const gl = (canvas.getContext("webgl") || canvas.getContext("experimental-webgl")) as WebGLRenderingContext | null;
     if (!gl) return;
 
+    gl.getExtension("OES_standard_derivatives");
+
     const vsSource = `
       attribute vec2 a_position;
       varying vec2 v_texCoord;
@@ -20,6 +22,7 @@ export default function ShaderBackground() {
     `;
 
     const fsSource = `
+      #extension GL_OES_standard_derivatives : enable
       precision highp float;
       varying vec2 v_texCoord;
       uniform float u_time;
