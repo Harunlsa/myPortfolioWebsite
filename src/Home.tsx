@@ -5,7 +5,12 @@ import ShaderBackground from "./ShaderBackground";
 import InteractiveTerminal from "./InteractiveTerminal";
 
 function TypingEffect() {
-  const phrases = ["Software Engineer", "AI Enthusiast", "Web Developer"];
+  const phrases = [
+    "Software Engineer",
+    "AI Enthusiast",
+    "Web Developer",
+    "UI/UX Designer",
+  ];
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -47,7 +52,6 @@ function TypingEffect() {
 export default function Home() {
   return (
     <div className="font-body-md text-body-md overflow-x-hidden bg-[#131313] text-[#e5e2e1] min-h-screen">
-
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-20 pb-16 overflow-hidden">
         {/* Full-bleed Shader Background */}
@@ -83,7 +87,8 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            I build modern web applications, AI-powered tools, and automation solutions that solve real-world problems.
+            I build modern web applications, AI-powered tools, and automation
+            solutions that solve real-world problems.
           </motion.p>
 
           <motion.div
@@ -108,7 +113,8 @@ export default function Home() {
               className="w-full sm:w-auto text-on-surface hover:text-primary transition-colors font-label-caps text-label-caps flex items-center justify-center gap-2"
               href="#"
             >
-              Download CV <span className="material-symbols-outlined">download</span>
+              Download CV{" "}
+              <span className="material-symbols-outlined">download</span>
             </a>
           </motion.div>
 
@@ -207,7 +213,8 @@ export default function Home() {
                   Plastic Company
                 </h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mb-6 flex-1">
-                  A comprehensive internal management system designed to streamline operations for a large-scale manufacturing plant.
+                  A comprehensive internal management system designed to
+                  streamline operations for a large-scale manufacturing plant.
                 </p>
                 <div className="flex justify-between items-center mt-auto">
                   <div className="flex -space-x-2">
@@ -222,8 +229,13 @@ export default function Home() {
                       </span>
                     </div>
                   </div>
-                  <a className="text-primary hover:text-secondary transition-colors" href="#">
-                    <span className="material-symbols-outlined">open_in_new</span>
+                  <a
+                    className="text-primary hover:text-secondary transition-colors"
+                    href="#"
+                  >
+                    <span className="material-symbols-outlined">
+                      open_in_new
+                    </span>
                   </a>
                 </div>
               </div>
@@ -251,7 +263,9 @@ export default function Home() {
                   Football Pitch System
                 </h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mb-6 flex-1">
-                  An automated booking and management solution for sports facilities with real-time availability tracking and payment integration.
+                  An automated booking and management solution for sports
+                  facilities with real-time availability tracking and payment
+                  integration.
                 </p>
                 <div className="flex justify-between items-center mt-auto">
                   <div className="flex -space-x-2">
@@ -266,8 +280,13 @@ export default function Home() {
                       </span>
                     </div>
                   </div>
-                  <a className="text-primary hover:text-secondary transition-colors" href="#">
-                    <span className="material-symbols-outlined">open_in_new</span>
+                  <a
+                    className="text-primary hover:text-secondary transition-colors"
+                    href="#"
+                  >
+                    <span className="material-symbols-outlined">
+                      open_in_new
+                    </span>
                   </a>
                 </div>
               </div>
@@ -295,7 +314,8 @@ export default function Home() {
                   FPL AI Assistant
                 </h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mb-6 flex-1">
-                  A predictive modeling tool using machine learning to optimize Fantasy Premier League squad selection and transfer strategy.
+                  A predictive modeling tool using machine learning to optimize
+                  Fantasy Premier League squad selection and transfer strategy.
                 </p>
                 <div className="flex justify-between items-center mt-auto">
                   <div className="flex -space-x-2">
@@ -310,8 +330,13 @@ export default function Home() {
                       </span>
                     </div>
                   </div>
-                  <a className="text-primary hover:text-secondary transition-colors" href="#">
-                    <span className="material-symbols-outlined">open_in_new</span>
+                  <a
+                    className="text-primary hover:text-secondary transition-colors"
+                    href="#"
+                  >
+                    <span className="material-symbols-outlined">
+                      open_in_new
+                    </span>
                   </a>
                 </div>
               </div>
@@ -319,7 +344,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }

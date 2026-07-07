@@ -9,37 +9,60 @@ export default function Footer() {
             className="font-code-md text-code-md text-on-surface-variant hover:text-primary transition-colors font-bold"
             to="/"
           >
-            HA_SYS
+            {/* <img href="C:\Users\HLAbdulwahab\Documents\GitHub\myPortfolioWebsite\public\favicon.png" /> */}
+            <img
+              src="../public/favicon.png"
+              alt="logo"
+              className="max-h-16 rounded-md"
+            />
           </Link>
           <p className="text-on-surface-variant font-body-sm text-body-sm text-center md:text-left">
-            © 2026 Harun Abdulwahab. Built with precision.
+            © 2026 Harun Abdulwahab.
           </p>
         </div>
         <div className="flex gap-6">
-          <a className="text-on-surface-variant hover:text-secondary transition-colors group" href="#">
+          <a
+            className="text-on-surface-variant hover:text-secondary transition-colors group"
+            href="#"
+          >
             <span className="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">
               terminal
             </span>
           </a>
-          <a className="text-on-surface-variant hover:text-secondary transition-colors group" href="#">
+          <a
+            className="text-on-surface-variant hover:text-secondary transition-colors group"
+            href="#"
+          >
             <span className="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">
               code
             </span>
           </a>
-          <a className="text-on-surface-variant hover:text-secondary transition-colors group" href="#">
+          <a
+            className="text-on-surface-variant hover:text-secondary transition-colors group"
+            href="#"
+          >
             <span className="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">
               mail
             </span>
           </a>
         </div>
         <div className="flex gap-8">
-          <a className="text-on-surface-variant hover:text-secondary font-body-sm text-body-sm transition-colors duration-300" href="#">
+          <a
+            className="text-on-surface-variant hover:text-secondary font-body-sm text-body-sm transition-colors duration-300"
+            href="https://github.com/Harunlsa"
+          >
             GitHub
           </a>
-          <a className="text-on-surface-variant hover:text-secondary font-body-sm text-body-sm transition-colors duration-300" href="#">
+          <a
+            className="text-on-surface-variant hover:text-secondary font-body-sm text-body-sm transition-colors duration-300"
+            href="https://linkedin.com/in/hlabdulwahab"
+          >
             LinkedIn
           </a>
-          <a className="text-on-surface-variant hover:text-secondary font-body-sm text-body-sm transition-colors duration-300" href="#">
+          <a
+            className="text-on-surface-variant hover:text-secondary font-body-sm text-body-sm transition-colors duration-300"
+            href="https://x.com/harun_la"
+          >
             Twitter
           </a>
         </div>
