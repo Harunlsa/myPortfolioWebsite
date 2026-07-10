@@ -4,39 +4,43 @@ import { motion } from "framer-motion";
 import ShaderBackground from "./ShaderBackground";
 import InteractiveTerminal from "./InteractiveTerminal";
 
+const PHRASES = [
+  "Software Engineer",
+  "AI Enthusiast",
+  "Web Developer",
+  "UI/UX Designer",
+];
+
 function TypingEffect() {
-  const phrases = [
-    "Software Engineer",
-    "AI Enthusiast",
-    "Web Developer",
-    "UI/UX Designer",
-  ];
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
 
   useEffect(() => {
-    const currentPhrase = phrases[phraseIndex];
+    const currentPhrase = PHRASES[phraseIndex];
     let timer: number;
 
-    if (isDeleting) {
-      timer = window.setTimeout(() => {
-        setText(currentPhrase.substring(0, charIndex - 1));
-        setCharIndex((prev) => prev - 1);
-      }, 40);
+    if (!isDeleting) {
+      if (charIndex < currentPhrase.length) {
+        timer = window.setTimeout(() => {
+          setCharIndex((prev) => prev + 1);
+        }, 80);
+      } else {
+        // Pause at the end of the phrase, then start deleting
+        timer = window.setTimeout(() => {
+          setIsDeleting(true);
+        }, 2000);
+      }
     } else {
-      timer = window.setTimeout(() => {
-        setText(currentPhrase.substring(0, charIndex + 1));
-        setCharIndex((prev) => prev + 1);
-      }, 80);
-    }
-
-    if (!isDeleting && charIndex === currentPhrase.length) {
-      timer = window.setTimeout(() => setIsDeleting(true), 2000);
-    } else if (isDeleting && charIndex === 0) {
-      setIsDeleting(false);
-      setPhraseIndex((prev) => (prev + 1) % phrases.length);
+      if (charIndex > 0) {
+        timer = window.setTimeout(() => {
+          setCharIndex((prev) => prev - 1);
+        }, 40);
+      } else {
+        // Immediately switch to the next phrase
+        setIsDeleting(false);
+        setPhraseIndex((prev) => (prev + 1) % PHRASES.length);
+      }
     }
 
     return () => clearTimeout(timer);
@@ -44,7 +48,7 @@ function TypingEffect() {
 
   return (
     <span className="typing-container font-code-md text-code-md text-secondary tracking-wider uppercase font-semibold">
-      {text}
+      {PHRASES[phraseIndex].substring(0, charIndex)}
     </span>
   );
 }
@@ -109,13 +113,13 @@ export default function Home() {
             >
               Contact Me
             </Link>
-            <a
+            {/* <a
               className="w-full sm:w-auto text-on-surface hover:text-primary transition-colors font-label-caps text-label-caps flex items-center justify-center gap-2"
               href="#"
             >
               Download CV{" "}
               <span className="material-symbols-outlined">download</span>
-            </a>
+            </a> */}
           </motion.div>
 
           <motion.div

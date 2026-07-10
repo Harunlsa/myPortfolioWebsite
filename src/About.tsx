@@ -38,10 +38,23 @@ export default function About() {
               </h1>
               <div className="glass-card p-8 space-y-6">
                 <p className="text-on-surface-variant">
-                  I am a <span className="text-primary font-medium">Software Engineer</span> specializing in bridging the gap between robust architectural logic and high-fidelity frontend execution. My approach is rooted in mathematical precision and a deep‑seated curiosity for how complex systems interact.
+                  I am a{" "}
+                  <span className="text-primary font-medium">
+                    Software Engineer
+                  </span>{" "}
+                  specializing in bridging the gap between robust architectural
+                  logic and high-fidelity frontend execution. My approach is
+                  rooted in mathematical precision and a deep‑seated curiosity
+                  for how complex systems interact.
                 </p>
                 <p className="text-on-surface-variant">
-                  With a focus on <span className="text-secondary">performance‑driven development</span>, I leverage modern frameworks and AI‑integrated workflows to build software that isn\'t just functional, but inherently scalable and intuitive.
+                  With a focus on{" "}
+                  <span className="text-secondary">
+                    performance‑driven development
+                  </span>
+                  , I leverage modern frameworks and AI‑integrated workflows to
+                  build software that isn\'t just functional, but inherently
+                  scalable and intuitive.
                 </p>
               </div>
             </div>
@@ -50,9 +63,9 @@ export default function About() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200" />
                 <div className="relative glass-card aspect-square overflow-hidden">
                   <img
+                    alt="A high-end, minimalist professional workstation setup with a mechanical keyboard"
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlRxhgD5CStPjHHS28VbS5RZ249lw-qHkjO6Qo_VNA_R8XvlM7srhQVA_yXuSXQDEE9LB7uL1xUfkTiZoPe7JeyC4ZGVLfYwa7ZMpGIuiKvg5sQsU-r6kmes4rTY78JvZV91hHf1dE6mog75gmsIUb1OH-NoFFzRU1W26v-g81zclRgvwrj9d7-jU_uIXe8TQZu2LpaM1N8A4-8e9CvhgDxj6ptNkoBbJfeA3c1qLB-4ssJnD-kFrWww"
-                    alt="Professional portrait of Harun"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOyH0s6ML1CjitygRHGINLJm0c5t8d2HNcNOQ099uYS8rWURYSawxCncLRRD3lSuAs7OgwE2rUItG94py6baWS4RV_p6w4HAHLSkXeXppm_7U8Gct1-ETzDxjHTklhWgT3iGfydFj_q9xi6l4XEe-f0NY5pxmAYEfyFCHq5lFuNwUBzoyT0qEJWwAFoewhaihdu_j5roPNJa3A-8QpB1zpehs2QOdKXYoQ9jyaEyIjM3mkPFOSqvFkzA"
                   />
                 </div>
               </div>
@@ -67,13 +80,18 @@ export default function About() {
             <div className="glass-card p-10 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-primary">terminal</span>
+                  <span className="material-symbols-outlined text-primary">
+                    terminal
+                  </span>
                 </div>
                 <h2 className="font-headline-lg text-headline-lg text-on-surface mb-6">
                   What do I enjoy building?
                 </h2>
                 <p className="text-on-surface-variant mb-6">
-                  My passion lies in crafting high‑performance web ecosystems and AI‑powered tools. I find immense satisfaction in optimizing low‑level algorithms just as much as designing a seamless, glassmorphic UI interaction.
+                  My passion lies in crafting high‑performance web ecosystems
+                  and AI‑powered tools. I find immense satisfaction in
+                  optimizing low‑level algorithms just as much as designing a
+                  seamless, glassmorphic UI interaction.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">
@@ -93,27 +111,46 @@ export default function About() {
             <div className="glass-card p-10 flex flex-col justify-between border-primary/20">
               <div>
                 <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-secondary">psychology</span>
+                  <span className="material-symbols-outlined text-secondary">
+                    psychology
+                  </span>
                 </div>
                 <h2 className="font-headline-lg text-headline-lg text-on-surface mb-6">
                   What makes me different?
                 </h2>
                 <p className="text-on-surface-variant mb-6">
-                  Unlike traditional developers, I view software through a dual lens of <span className="text-primary">engineering rigor</span> and <span className="text-secondary">artistic design</span>. This multidisciplinary perspective ensures that technical constraints never compromise the user's emotional experience.
+                  Unlike traditional developers, I view software through a dual
+                  lens of{" "}
+                  <span className="text-primary">engineering rigor</span> and{" "}
+                  <span className="text-secondary">artistic design</span>. This
+                  multidisciplinary perspective ensures that technical
+                  constraints never compromise the user's emotional experience.
                 </p>
               </div>
               <div className="grid grid-cols-3 gap-4 border-t border-[#ffffff10] pt-6">
                 <div className="text-center">
-                  <div className="text-primary font-bold text-headline-lg">1%</div>
-                  <div className="text-[10px] font-label-caps text-on-surface-variant">CODE PRECISION</div>
+                  <div className="text-primary font-bold text-headline-lg">
+                    1%
+                  </div>
+                  <div className="text-[10px] font-label-caps text-on-surface-variant">
+                    CODE PRECISION
+                  </div>
                 </div>
                 <div className="text-center border-x border-[#ffffff10]">
-                  <div className="text-secondary font-bold text-headline-lg">24/7</div>
-                  <div className="text-[10px] font-label-caps text-on-surface-variant">LOGIC MONITOR</div>
+                  <div className="text-secondary font-bold text-headline-lg">
+                    24/7
+                  </div>
+                  <div className="text-[10px] font-label-caps text-on-surface-variant">
+                    LOGIC MONITOR
+                  </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-tertiary font-bold text-headline-lg">∞</div>
-                  <div className="text-[10px] font-label-caps text-on-surface-variant">ITERATION</div>
+                  <div className="text-tertiary font-bold text-headline-lg">
+                    ∞
+                  </div>
+                  <div className="text-[10px] font-label-caps text-on-surface-variant">
+                    ITERATION
+                  </div>
                 </div>
               </div>
             </div>
@@ -125,38 +162,68 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Location */}
             <div className="glass-card p-8 relative overflow-hidden group">
-              <div className="absolute inset-0 z-0 grayscale opacity-20 group-hover:grayscale-0 group-hover:opacity-40 transition-all duration-700" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCdkJlnlOtSjLZ0Q-n5fdIDP9n_q75Xwuvb-JviNG23vWuzDuTC0XQJ8I4Oizw0fWl5Nj0ArIhUDq7kCC0E9LItJpOymwgvdNHXuvDDDK4dWg1cjxoq0_YuntsUWMMEKXbTEZxHruzqWY7hckCgLbNs93LE82xKF0Duu7FnNkQxzJmUQXxz2i8e0MEdlmK2Pbf3RO0Dm58JNdjvZPhgbhXPNiYk5oZ698Fm527KBWmUai_9xpxC9rG4lQ')" }} />
+              <div
+                className="absolute inset-0 z-0 grayscale opacity-20 group-hover:grayscale-0 group-hover:opacity-40 transition-all duration-700"
+                style={{
+                  backgroundImage:
+                    "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCdkJlnlOtSjLZ0Q-n5fdIDP9n_q75Xwuvb-JviNG23vWuzDuTC0XQJ8I4Oizw0fWl5Nj0ArIhUDq7kCC0E9LItJpOymwgvdNHXuvDDDK4dWg1cjxoq0_YuntsUWMMEKXbTEZxHruzqWY7hckCgLbNs93LE82xKF0Duu7FnNkQxzJmUQXxz2i8e0MEdlmK2Pbf3RO0Dm58JNdjvZPhgbhXPNiYk5oZ698Fm527KBWmUai_9xpxC9rG4lQ')",
+                }}
+              />
               <div className="relative z-10">
-                <span className="material-symbols-outlined text-primary mb-4">location_on</span>
-                <h3 className="font-label-caps text-label-caps text-on-surface-variant mb-1">LOCATION</h3>
-                <p className="text-on-surface font-headline-lg text-headline-lg">Nigeria</p>
+                <span className="material-symbols-outlined text-primary mb-4">
+                  location_on
+                </span>
+                <h3 className="font-label-caps text-label-caps text-on-surface-variant mb-1">
+                  LOCATION
+                </h3>
+                <p className="text-on-surface font-headline-lg text-headline-lg">
+                  Nigeria
+                </p>
               </div>
             </div>
             {/* Languages */}
             <div className="glass-card p-8">
-              <span className="material-symbols-outlined text-secondary mb-4">translate</span>
-              <h3 className="font-label-caps text-label-caps text-on-surface-variant mb-4">LANGUAGES</h3>
+              <span className="material-symbols-outlined text-secondary mb-4">
+                translate
+              </span>
+              <h3 className="font-label-caps text-label-caps text-on-surface-variant mb-4">
+                LANGUAGES
+              </h3>
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-on-surface">English</span>
-                  <span className="text-secondary font-code-md text-code-md">Native</span>
+                  <span className="text-secondary font-code-md text-code-md">
+                    Native
+                  </span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-on-surface">Hausa</span>
-                  <span className="text-secondary font-code-md text-code-md">Native</span>
+                  <span className="text-secondary font-code-md text-code-md">
+                    Native
+                  </span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-on-surface">Spanish</span>
-                  <span className="text-secondary font-code-md text-code-md">Intermediate</span>
+                  <span className="text-secondary font-code-md text-code-md">
+                    Intermediate
+                  </span>
                 </div>
               </div>
             </div>
             {/* Education */}
             <div className="glass-card p-8 border-l-4 border-l-primary">
-              <span className="material-symbols-outlined text-primary mb-4">school</span>
-              <h3 className="font-label-caps text-label-caps text-on-surface-variant mb-2">EDUCATION</h3>
-              <p className="text-on-surface font-medium mb-1">Skyline University Nigeria</p>
-              <p className="text-on-surface-variant text-body-sm mb-4">B.Sc Software Engineering</p>
+              <span className="material-symbols-outlined text-primary mb-4">
+                school
+              </span>
+              <h3 className="font-label-caps text-label-caps text-on-surface-variant mb-2">
+                EDUCATION
+              </h3>
+              <p className="text-on-surface font-medium mb-1">
+                Skyline University Nigeria
+              </p>
+              <p className="text-on-surface-variant text-body-sm mb-4">
+                B.Sc Software Engineering
+              </p>
               <div className="inline-block bg-primary/20 text-primary px-3 py-1 rounded text-[10px] font-bold uppercase tracking-wider">
                 First Class Honours
               </div>
@@ -167,74 +234,145 @@ export default function About() {
         {/* Skills Section */}
         <section className="mb-32" id="skills">
           <div className="text-center mb-16">
-            <span className="text-secondary font-label-caps text-label-caps tracking-[0.2em] mb-4 block">TECH STACK</span>
-            <h2 className="font-headline-xl text-headline-xl text-on-surface">Core Competencies</h2>
+            <span className="text-secondary font-label-caps text-label-caps tracking-[0.2em] mb-4 block">
+              TECH STACK
+            </span>
+            <h2 className="font-headline-xl text-headline-xl text-on-surface">
+              Core Competencies
+            </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Languages */}
             <div className="glass-card p-8">
               <h3 className="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-3">
-                <span className="material-symbols-outlined text-primary">code</span> Languages
+                <span className="material-symbols-outlined text-primary">
+                  code
+                </span>{" "}
+                Languages
               </h3>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">Python</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">JS</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">TS</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">C/C++</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">SQL</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">HTML</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">CSS</span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  Python
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  JS
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  TS
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  C/C++
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  SQL
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  HTML
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  CSS
+                </span>
               </div>
             </div>
             {/* Frameworks */}
             <div className="glass-card p-8">
               <h3 className="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-3">
-                <span className="material-symbols-outlined text-secondary">layers</span> Frameworks
+                <span className="material-symbols-outlined text-secondary">
+                  layers
+                </span>{" "}
+                Frameworks
               </h3>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">React</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">Node</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">Express</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">Bootstrap</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">Tailwind</span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  React
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  Node
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  Express
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  Bootstrap
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  Tailwind
+                </span>
               </div>
             </div>
             {/* AI & Data */}
             <div className="glass-card p-8">
               <h3 className="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-3">
-                <span className="material-symbols-outlined text-tertiary">memory</span> AI &amp; Data
+                <span className="material-symbols-outlined text-tertiary">
+                  memory
+                </span>{" "}
+                AI &amp; Data
               </h3>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">TensorFlow</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">PyTorch</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">OpenCV</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">Scikit-learn</span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  TensorFlow
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  PyTorch
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  OpenCV
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  Scikit-learn
+                </span>
               </div>
             </div>
             {/* Tools */}
             <div className="glass-card p-8">
               <h3 className="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-3">
-                <span className="material-symbols-outlined text-primary">handyman</span> Tools
+                <span className="material-symbols-outlined text-primary">
+                  handyman
+                </span>{" "}
+                Tools
               </h3>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">Git</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">Docker</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">Linux</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">VS Code</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">Figma</span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  Git
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  Docker
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  Linux
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  VS Code
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  Figma
+                </span>
               </div>
             </div>
             {/* Specialized */}
             <div className="glass-card p-8 lg:col-span-2">
               <h3 className="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-3">
-                <span className="material-symbols-outlined text-secondary">settings_input_component</span> Specialized
+                <span className="material-symbols-outlined text-secondary">
+                  settings_input_component
+                </span>{" "}
+                Specialized
               </h3>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">REST APIs</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">UI/UX</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">Cybersecurity</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">CI/CD</span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">Cloud Computing</span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  REST APIs
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  UI/UX
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  Cybersecurity
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  CI/CD
+                </span>
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                  Cloud Computing
+                </span>
               </div>
             </div>
           </div>
@@ -254,7 +392,7 @@ export default function About() {
             <div className="p-8 font-code-md text-code-md leading-relaxed bg-gradient-to-br from-transparent to-primary/5">
               <pre className="overflow-x-auto">
                 <code className="text-on-surface-variant">
-{`const developer = {
+                  {`const developer = {
   name: "Harun Abdulwahab",
   role: "Software Engineer",
   philosophy: "Bridges the gap between data and human intent",
@@ -270,7 +408,6 @@ console.log(developer.execute());`}
             </div>
           </div>
         </section>
-
       </main>
     </div>
   );

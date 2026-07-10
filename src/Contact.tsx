@@ -59,7 +59,9 @@ export default function Contact() {
         }}
       />
 
-      <div className="absolute inset-0 w-full h-full -z-10 pointer-events-none"><ShaderBackground/></div>
+      <div className="absolute inset-0 w-full h-full -z-10 pointer-events-none">
+        <ShaderBackground />
+      </div>
 
       <main className="pt-32 pb-24 px-5 md:px-20 max-w-[1200px] mx-auto relative z-10">
         {/* Hero Section */}
@@ -69,8 +71,8 @@ export default function Contact() {
           </h1>
           <p className="text-on-surface-variant max-w-2xl mx-auto text-lg">
             Whether you're looking to start a new project, scale an existing
-            platform, or just want to discuss technical architecture—I'm here to
-            help translate your vision into robust code.
+            platform, or just want to discuss technical architecture, I'm here
+            to help translate your vision into robust code.
           </p>
         </div>
 
@@ -92,47 +94,9 @@ export default function Contact() {
                     </p>
                     <a
                       className="font-code-md text-code-md text-on-surface hover:text-secondary transition-colors"
-                      href="mailto:contact@harun.dev"
+                      href="mailto:harunlabdulwahab@gmail.com"
                     >
-                      contact@harun.dev
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined">terminal</span>
-                  </div>
-                  <div>
-                    <p className="font-label-caps text-label-caps text-on-surface-variant text-xs font-semibold">
-                      GitHub
-                    </p>
-                    <a
-                      className="font-code-md text-code-md text-on-surface hover:text-secondary transition-colors"
-                      href="https://github.com/harun-a"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      github.com/harun-a
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined">link</span>
-                  </div>
-                  <div>
-                    <p className="font-label-caps text-label-caps text-on-surface-variant text-xs font-semibold">
-                      LinkedIn
-                    </p>
-                    <a
-                      className="font-code-md text-code-md text-on-surface hover:text-secondary transition-colors"
-                      href="https://linkedin.com/in/harunabdul"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      linkedin.com/in/harunabdul
+                      harunlabdulwahab@gmail.com
                     </a>
                   </div>
                 </div>
@@ -150,9 +114,46 @@ export default function Contact() {
                     </p>
                     <a
                       className="font-code-md text-code-md text-on-surface hover:text-secondary transition-colors"
-                      href="tel:+2348000000000"
+                      href="tel:+2349020838258"
                     >
-                      +234 800 000 0000
+                      +234 902 083 8258
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 group">
+                  <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                    <span className="material-symbols-outlined">terminal</span>
+                  </div>
+                  <div>
+                    <p className="font-label-caps text-label-caps text-on-surface-variant text-xs font-semibold">
+                      GitHub
+                    </p>
+                    <a
+                      className="font-code-md text-code-md text-on-surface hover:text-secondary transition-colors"
+                      href="https://github.com/harunlsa"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      github.com/harunlsa
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4 group">
+                  <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                    <span className="material-symbols-outlined">link</span>
+                  </div>
+                  <div>
+                    <p className="font-label-caps text-label-caps text-on-surface-variant text-xs font-semibold">
+                      LinkedIn
+                    </p>
+                    <a
+                      className="font-code-md text-code-md text-on-surface hover:text-secondary transition-colors"
+                      href="https://linkedin.com/in/hlabdulwahab"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      linkedin.com/in/hlabdulwahab
                     </a>
                   </div>
                 </div>

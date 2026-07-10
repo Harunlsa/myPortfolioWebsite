@@ -11,7 +11,7 @@ export default function Footer() {
           >
             {/* <img href="C:\Users\HLAbdulwahab\Documents\GitHub\myPortfolioWebsite\public\favicon.png" /> */}
             <img
-              src="../public/favicon.png"
+              src="./favicon.png"
               alt="logo"
               className="max-h-16 rounded-md"
             />
