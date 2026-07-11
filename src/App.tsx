@@ -10,7 +10,7 @@ import Footer from "./Footer";
 export default function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-[#131313] text-[#e5e2e1]">
+      <div className="flex flex-col min-h-screen bg-background text-on-background transition-colors duration-300">
         <Navbar />
         <div className="flex-1">
           <Routes>

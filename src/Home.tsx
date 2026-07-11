@@ -3,7 +3,13 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import ShaderBackground from "./ShaderBackground";
 import InteractiveTerminal from "./InteractiveTerminal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBootstrap, faReact } from "@fortawesome/free-brands-svg-icons";
 
+import hartImgMain from "./assets/hartImgMain.png";
+// import { faReact } from "@fortawesome/free-solid-svg-icons";
+// import { byPrefixAndName } from "@awesome.me/kit-KIT_CODE/icons";
+// import {byPrefixAndName}
 const PHRASES = [
   "Software Engineer",
   "AI Enthusiast",
@@ -55,7 +61,7 @@ function TypingEffect() {
 
 export default function Home() {
   return (
-    <div className="font-body-md text-body-md overflow-x-hidden bg-[#131313] text-[#e5e2e1] min-h-screen">
+    <div className="font-body-md text-body-md overflow-x-hidden bg-background text-on-background min-h-screen transition-colors duration-300">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-20 pb-16 overflow-hidden">
         {/* Full-bleed Shader Background */}
@@ -134,12 +140,12 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-surface-container-lowest relative z-10 border-y border-[#ffffff10]">
+      <section className="py-16 bg-surface-container-lowest relative z-10 border-y border-outline-variant/30 transition-colors duration-300">
         <div className="max-w-[1200px] mx-auto px-5 md:px-20">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center group">
               <div className="font-headline-lg text-3xl text-primary mb-2 group-hover:scale-110 transition-transform font-bold">
-                20+
+                10+
               </div>
               <div className="font-label-caps text-label-caps text-on-surface-variant">
                 Projects
@@ -147,7 +153,7 @@ export default function Home() {
             </div>
             <div className="text-center group">
               <div className="font-headline-lg text-3xl text-secondary mb-2 group-hover:scale-110 transition-transform font-bold">
-                5+
+                20+
               </div>
               <div className="font-label-caps text-label-caps text-on-surface-variant">
                 Technologies
@@ -155,10 +161,10 @@ export default function Home() {
             </div>
             <div className="text-center group">
               <div className="font-headline-lg text-3xl text-primary mb-2 group-hover:scale-110 transition-transform font-bold">
-                2+
+                8+
               </div>
               <div className="font-label-caps text-label-caps text-on-surface-variant">
-                Years Learning
+                Years of Experience
               </div>
             </div>
             <div className="text-center group">
@@ -175,7 +181,7 @@ export default function Home() {
 
       {/* Featured Projects Section */}
       <section className="py-32 relative z-10" id="projects">
-        <div className="max-w-[1200px] mx-auto px-5 md:px-20">
+        <div className="max-w-max-width mx-auto px-5 md:px-20">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-16 gap-4">
             <div>
               <h2 className="font-headline-lg text-3xl text-on-surface mb-4 font-bold">
@@ -201,8 +207,7 @@ export default function Home() {
                 <div
                   className="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
                   style={{
-                    backgroundImage:
-                      "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAxc_0dseC7y0lLUzMKR3EbvqKe4Tnrs2SF4jwqZtD6SB3zCGvDAQMmphmnd6n-7GTGEMHqm-6CUMjBHD2aC7U367ptMsmlNdBuS9mvguNruIwLL68t66q9XboM3jH8jz09eBkz6nElmJPkYfLSuAhOhVzLwSFr-NtoSAI0DXogTK6VR78jONQ76kjn4e59MGzbK2Kz7AzgE2VKG0fVnBlnKVUbBGo7x1olevY38swPtjctp-iQmEKRVg')",
+                    backgroundImage: `url(${hartImgMain})`,
                   }}
                 ></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
@@ -210,32 +215,34 @@ export default function Home() {
               <div className="p-8 flex-1 flex flex-col">
                 <div className="flex gap-2 mb-4">
                   <span className="px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary font-code-md text-[10px] uppercase">
-                    ERP System
+                    Website / Webapp
                   </span>
                 </div>
                 <h3 className="font-headline-lg text-xl text-on-surface mb-3 font-semibold">
-                  Plastic Company
+                  Hart Industries Website / Catalogue
                 </h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mb-6 flex-1">
-                  A comprehensive internal management system designed to
-                  streamline operations for a large-scale manufacturing plant.
+                  A modern, responsive website built for Hart Industries to
+                  showcase its products, company information, and contact
+                  details.
                 </p>
                 <div className="flex justify-between items-center mt-auto">
                   <div className="flex -space-x-2">
                     <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
                       <span className="material-symbols-outlined text-[14px]">
-                        terminal
+                        <FontAwesomeIcon icon={faReact} />
                       </span>
                     </div>
                     <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
                       <span className="material-symbols-outlined text-[14px]">
-                        database
+                        <FontAwesomeIcon icon={faBootstrap} />
                       </span>
                     </div>
                   </div>
                   <a
                     className="text-primary hover:text-secondary transition-colors"
-                    href="#"
+                    href="https://hart-industries.com"
+                    target="_blank"
                   >
                     <span className="material-symbols-outlined">
                       open_in_new

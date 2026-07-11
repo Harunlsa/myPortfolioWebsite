@@ -40,7 +40,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="font-body-md text-body-md bg-transparent text-[#e5e2e1] min-h-screen relative overflow-x-hidden">
+    <div className="font-body-md text-body-md bg-transparent text-on-background min-h-screen relative overflow-x-hidden transition-colors duration-300">
       {/* Aurora Blurs */}
       <div
         className="aurora-bg fixed inset-0 w-full h-full opacity-15 pointer-events-none transition-all duration-300 ease-out"
@@ -66,7 +66,7 @@ export default function Contact() {
       <main className="pt-32 pb-24 px-5 md:px-20 max-w-[1200px] mx-auto relative z-10">
         {/* Hero Section */}
         <div className="text-center mb-20">
-          <h1 className="font-headline-xl text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">
+          <h1 className="font-headline-xl text-4xl md:text-5xl font-bold mb-6 tracking-tight text-on-background">
             Let's Build Something Exceptional.
           </h1>
           <p className="text-on-surface-variant max-w-2xl mx-auto text-lg">
@@ -187,7 +187,7 @@ export default function Contact() {
                         Full Name
                       </label>
                       <input
-                        className="w-full form-input py-3 px-1 font-body-md text-on-surface focus:placeholder-transparent bg-surface-dim"
+                        className="w-full form-input py-3 px-2 font-body-md text-on-surface focus:placeholder-transparent bg-surface-dim border border-outline-variant/30 rounded-lg focus:border-primary focus:outline-none transition-colors"
                         id="name"
                         type="text"
                         placeholder="John Doe"
@@ -204,7 +204,7 @@ export default function Contact() {
                         Email Address
                       </label>
                       <input
-                        className="w-full form-input py-3 px-1 font-body-md text-on-surface focus:placeholder-transparent bg-surface-dim"
+                        className="w-full form-input py-3 px-2 font-body-md text-on-surface focus:placeholder-transparent bg-surface-dim border border-outline-variant/30 rounded-lg focus:border-primary focus:outline-none transition-colors"
                         id="email"
                         type="email"
                         placeholder="john@example.com"
@@ -223,7 +223,7 @@ export default function Contact() {
                       Inquiry Type
                     </label>
                     <select
-                      className="w-full form-input py-3 px-1 font-body-md text-on-surface bg-transparent appearance-none"
+                      className="w-full form-input py-3 px-2 font-body-md text-on-surface bg-surface-dim border border-outline-variant/30 rounded-lg focus:border-primary focus:outline-none transition-colors appearance-none cursor-pointer"
                       id="subject"
                       value={subject}
                       onChange={(e) => setSubject(e.target.value)}
@@ -252,7 +252,7 @@ export default function Contact() {
                       Message
                     </label>
                     <textarea
-                      className="w-full form-input py-3 px-1 font-body-md text-on-surface resize-none focus:placeholder-transparent bg-surface-dim"
+                      className="w-full form-input py-3 px-2 font-body-md text-on-surface resize-none focus:placeholder-transparent bg-surface-dim border border-outline-variant/30 rounded-lg focus:border-primary focus:outline-none transition-colors"
                       id="message"
                       placeholder="Tell me about your project or inquiry..."
                       rows={5}
@@ -287,7 +287,7 @@ export default function Contact() {
                       check_circle
                     </span>
                   </div>
-                  <h3 className="font-headline-lg text-2xl font-bold mb-2 text-white">
+                  <h3 className="font-headline-lg text-2xl font-bold mb-2 text-on-background">
                     Message Sent Successfully
                   </h3>
                   <p className="text-on-surface-variant">

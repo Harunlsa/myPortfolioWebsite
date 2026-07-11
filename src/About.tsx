@@ -2,7 +2,7 @@ import ShaderBackground from "./ShaderBackground";
 
 export default function About() {
   return (
-    <div className="font-body-md text-body-md bg-[#131313] text-[#e5e2e1] min-h-screen relative overflow-x-hidden">
+    <div className="font-body-md text-body-md bg-background text-on-background min-h-screen relative overflow-x-hidden transition-colors duration-300">
       {/* Aurora Blurs */}
       <div
         className="aurora-bg fixed inset-0 w-full h-full opacity-30 pointer-events-none transition-all duration-300 ease-out"
@@ -52,9 +52,9 @@ export default function About() {
                   <span className="text-secondary">
                     performance‑driven development
                   </span>
-                  , I leverage modern frameworks and AI‑integrated workflows to
-                  build software that isn\'t just functional, but inherently
-                  scalable and intuitive.
+                  , I leverage modern frameworks and workflows to build software
+                  that isn't just functional, but inherently scalable and
+                  intuitive.
                 </p>
               </div>
             </div>
@@ -94,7 +94,7 @@ export default function About() {
                   seamless, glassmorphic UI interaction.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-3">
+              {/* <div className="flex flex-wrap gap-3">
                 <span className="bg-surface-container px-3 py-1 rounded-full text-secondary font-code-md text-code-md">
                   Scalable Architectures
                 </span>
@@ -104,7 +104,7 @@ export default function About() {
                 <span className="bg-surface-container px-3 py-1 rounded-full text-secondary font-code-md text-code-md">
                   Creative UI
                 </span>
-              </div>
+              </div> */}
             </div>
 
             {/* What makes me different */}
@@ -127,7 +127,7 @@ export default function About() {
                   constraints never compromise the user's emotional experience.
                 </p>
               </div>
-              <div className="grid grid-cols-3 gap-4 border-t border-[#ffffff10] pt-6">
+              {/* <div className="grid grid-cols-3 gap-4 border-t border-outline-variant/30 pt-6">
                 <div className="text-center">
                   <div className="text-primary font-bold text-headline-lg">
                     1%
@@ -136,7 +136,7 @@ export default function About() {
                     CODE PRECISION
                   </div>
                 </div>
-                <div className="text-center border-x border-[#ffffff10]">
+                <div className="text-center border-x border-outline-variant/30">
                   <div className="text-secondary font-bold text-headline-lg">
                     24/7
                   </div>
@@ -152,7 +152,7 @@ export default function About() {
                     ITERATION
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -251,25 +251,25 @@ export default function About() {
                 Languages
               </h3>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   Python
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   JS
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   TS
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   C/C++
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   SQL
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   HTML
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   CSS
                 </span>
               </div>
@@ -283,25 +283,25 @@ export default function About() {
                 Frameworks
               </h3>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   React
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   Node
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   Express
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   Bootstrap
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   Tailwind
                 </span>
               </div>
             </div>
             {/* AI & Data */}
-            <div className="glass-card p-8">
+            {/* <div className="glass-card p-8">
               <h3 className="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-3">
                 <span className="material-symbols-outlined text-tertiary">
                   memory
@@ -309,20 +309,20 @@ export default function About() {
                 AI &amp; Data
               </h3>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   TensorFlow
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   PyTorch
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   OpenCV
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   Scikit-learn
                 </span>
               </div>
-            </div>
+            </div> */}
             {/* Tools */}
             <div className="glass-card p-8">
               <h3 className="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-3">
@@ -332,25 +332,25 @@ export default function About() {
                 Tools
               </h3>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   Git
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   Docker
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   Linux
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   VS Code
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   Figma
                 </span>
               </div>
             </div>
             {/* Specialized */}
-            <div className="glass-card p-8 lg:col-span-2">
+            {/* <div className="glass-card p-8">
               <h3 className="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-3">
                 <span className="material-symbols-outlined text-secondary">
                   settings_input_component
@@ -358,30 +358,30 @@ export default function About() {
                 Specialized
               </h3>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   REST APIs
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   UI/UX
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   Cybersecurity
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   CI/CD
                 </span>
-                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-[#ffffff10] font-code-md text-code-md">
+                <span className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg border border-outline-variant/30 font-code-md text-code-md">
                   Cloud Computing
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
         {/* Dynamic Visualization (Code Block) */}
         <section className="mb-32">
           <div className="glass-card overflow-hidden">
-            <div className="bg-[#ffffff10 px-4 py-2 flex items-center gap-2 border-b border-[#ffffff15]">
+            <div className="bg-surface-container px-4 py-2 flex items-center gap-2 border-b border-outline-variant/30">
               <div className="w-3 h-3 rounded-full bg-red-500/50" />
               <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
               <div className="w-3 h-3 rounded-full bg-green-500/50" />

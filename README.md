@@ -50,6 +50,6 @@ Welcome to the repository of my developer portfolio! This project is a modern, p
 ## 🤝 Contact & Socials
 
 - **Developer**: Harun L. Abdulwahab
-- **Email**: [harun@example.com](mailto:harun@example.com)
+- **Email**: [harunlabdulwahab@gmail.com](mailto:harunlabdulwahab@gmail.com)
 - **GitHub**: [github.com/harunlsa](https://github.com/harunlsa)
 - **Education**: B.Sc Software Engineering (First Class Honours) — Skyline University Nigeria

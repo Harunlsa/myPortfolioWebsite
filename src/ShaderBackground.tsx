@@ -28,6 +28,7 @@ export default function ShaderBackground() {
       uniform float u_time;
       uniform vec2 u_resolution;
       uniform vec2 u_mouse;
+      uniform float u_light_mode;
       
       float grid(vec2 uv, float spacing) {
           vec2 grid = abs(fract(uv / spacing - 0.5) - 0.5) / fwidth(uv / spacing);
@@ -39,17 +40,23 @@ export default function ShaderBackground() {
           vec2 mouse = u_mouse / u_resolution;
           
           // Background color
-          vec3 color = vec3(0.04, 0.04, 0.05);
+          vec3 bgDark = vec3(0.04, 0.04, 0.05);
+          vec3 bgLight = vec3(0.97, 0.98, 0.99);
+          vec3 color = mix(bgDark, bgLight, u_light_mode);
           
           // Animated Grid
           vec2 gridUV = uv * 20.0;
           float g = grid(gridUV + vec2(u_time * 0.1), 1.0);
-          color += g * 0.05 * vec3(0.14, 0.38, 0.92);
+          vec3 gridDark = g * 0.05 * vec3(0.14, 0.38, 0.92);
+          vec3 gridLight = g * 0.02 * vec3(0.14, 0.38, 0.92);
+          color += mix(gridDark, gridLight, u_light_mode);
           
           // Mouse Glow
           float dist = distance(uv, mouse);
           float glow = smoothstep(0.3, 0.0, dist);
-          color += glow * 0.15 * vec3(0.14, 0.38, 0.92);
+          vec3 glowDark = glow * 0.15 * vec3(0.14, 0.38, 0.92);
+          vec3 glowLight = glow * 0.04 * vec3(0.14, 0.38, 0.92);
+          color += mix(glowDark, glowLight, u_light_mode);
           
           // Floating Particles (Simulated)
           for(float i = 0.0; i < 15.0; i++) {
@@ -58,7 +65,9 @@ export default function ShaderBackground() {
                   fract(cos(i * 123.4) * 1000.0 + u_time * 0.01)
               );
               float circle = smoothstep(0.005, 0.0, length(uv - p));
-              color += circle * 0.4 * vec3(0.4, 0.7, 1.0);
+              vec3 partDark = circle * 0.4 * vec3(0.4, 0.7, 1.0);
+              vec3 partLight = circle * 0.15 * vec3(0.14, 0.38, 0.92);
+              color += mix(partDark, partLight, u_light_mode);
           }
           
           gl_FragColor = vec4(color, 1.0);
@@ -113,6 +122,7 @@ export default function ShaderBackground() {
     const uTime = gl.getUniformLocation(program, "u_time");
     const uRes = gl.getUniformLocation(program, "u_resolution");
     const uMouse = gl.getUniformLocation(program, "u_mouse");
+    const uLightMode = gl.getUniformLocation(program, "u_light_mode");
 
     let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 
@@ -150,6 +160,8 @@ export default function ShaderBackground() {
       gl.uniform1f(uTime, time * 0.001);
       gl.uniform2f(uRes, canvas.width, canvas.height);
       gl.uniform2f(uMouse, mouse.x, mouse.y);
+      const isLight = document.documentElement.classList.contains("light");
+      gl.uniform1f(uLightMode, isLight ? 1.0 : 0.0);
 
       gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
       animationFrameId = requestAnimationFrame(render);
