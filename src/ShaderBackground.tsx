@@ -7,7 +7,8 @@ export default function ShaderBackground() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const gl = (canvas.getContext("webgl") || canvas.getContext("experimental-webgl")) as WebGLRenderingContext | null;
+    const gl = (canvas.getContext("webgl") ||
+      canvas.getContext("experimental-webgl")) as WebGLRenderingContext | null;
     if (!gl) return;
 
     gl.getExtension("OES_standard_derivatives");
@@ -74,7 +75,11 @@ export default function ShaderBackground() {
       }
     `;
 
-    function loadShader(gl: WebGLRenderingContext, type: number, source: string) {
+    function loadShader(
+      gl: WebGLRenderingContext,
+      type: number,
+      source: string,
+    ) {
       const shader = gl.createShader(type);
       if (!shader) return null;
       gl.shaderSource(shader, source);
@@ -108,14 +113,14 @@ export default function ShaderBackground() {
     const positionBuffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
     const positions = new Float32Array([
-      -1.0, -1.0,
-       1.0, -1.0,
-      -1.0,  1.0,
-       1.0,  1.0,
+      -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0,
     ]);
     gl.bufferData(gl.ARRAY_BUFFER, positions, gl.STATIC_DRAW);
 
-    const positionAttributeLocation = gl.getAttribLocation(program, "a_position");
+    const positionAttributeLocation = gl.getAttribLocation(
+      program,
+      "a_position",
+    );
     gl.enableVertexAttribArray(positionAttributeLocation);
     gl.vertexAttribPointer(positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
 
@@ -179,7 +184,7 @@ export default function ShaderBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full opacity-60"
+      className="absolute inset-0 w-full h-full opacity-10"
       style={{ display: "block" }}
     />
   );

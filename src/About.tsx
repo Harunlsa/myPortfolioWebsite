@@ -1,34 +1,17 @@
-import ShaderBackground from "./ShaderBackground";
+import AuroraBackground from "./AuroraBackground";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+// import ShaderBackground from "./ShaderBackground";
 
 export default function About() {
   return (
-    <div className="font-body-md text-body-md bg-background text-on-background min-h-screen relative overflow-x-hidden transition-colors duration-300">
-      {/* Aurora Blurs */}
-      <div
-        className="aurora-bg fixed inset-0 w-full h-full opacity-30 pointer-events-none transition-all duration-300 ease-out"
-        style={{
-          background: `radial-gradient(circle at 30% 30%, #2563eb, transparent 50%)`,
-          filter: "blur(100px)",
-          zIndex: -1,
-        }}
-      />
-      <div
-        className="aurora-bg fixed inset-0 w-full h-full opacity-35 pointer-events-none transition-all duration-300 ease-out"
-        style={{
-          background: `radial-gradient(circle at 70% 70%, #00cbe6, transparent 50%)`,
-          filter: "blur(100px)",
-          zIndex: -1,
-        }}
-      />
+    <div className="font-body-md text-body-md bg-transparent text-on-background min-h-screen relative overflow-x-hidden transition-colors duration-300">
+      <AuroraBackground />
 
-      <div className="absolute inset-0 w-full h-full -z-10 pointer-events-none">
-        <ShaderBackground />
-      </div>
-
-      <main className="pt-32 pb-24 max-w-[1200px] mx-auto px-5 md:px-20 relative z-10">
+      <main className="pt-32 pb-24 max-w-max-width mx-auto px-5 md:px-20 relative z-10">
         {/* Hero Section */}
         <section className="mb-32">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-lcenter">
             <div className="lg:col-span-7">
               <span className="text-secondary font-label-caps text-label-caps tracking-[0.2em] mb-4 block">
                 IDENTIFICATION
@@ -381,7 +364,7 @@ export default function About() {
         {/* Dynamic Visualization (Code Block) */}
         <section className="mb-32">
           <div className="glass-card overflow-hidden">
-            <div className="bg-surface-container px-4 py-2 flex items-center gap-2 border-b border-outline-variant/30">
+            <div className="bg-surface-container px-4 py-2 flex items-center gap-2 border-b border-outline-variant/30 ">
               <div className="w-3 h-3 rounded-full bg-red-500/50" />
               <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
               <div className="w-3 h-3 rounded-full bg-green-500/50" />
@@ -389,10 +372,22 @@ export default function About() {
                 Harun.js — Bio-Architecture
               </span>
             </div>
-            <div className="p-8 font-code-md text-code-md leading-relaxed bg-gradient-to-br from-transparent to-primary/5">
-              <pre className="overflow-x-auto">
-                <code className="text-on-surface-variant">
-                  {`const developer = {
+            <div className="p-8 font-code-md text-code-md leading-relaxed bg-linear-to-br from-transparent to-primary/5">
+              {/* <pre className="overflow-x-hidden whitespace-pre-wrap"> */}
+              {/* <code className="text-on-surface-variant"> */}
+              <SyntaxHighlighter
+                language="javascript"
+                style={oneDark}
+                // showLineNumbers
+                wrapLongLines
+                customStyle={{
+                  background: "transparent",
+                  padding: 0,
+                  margin: 0,
+                }}
+                codeTagProps={{ style: { fontFamily: "inherit" } }}
+              >
+                {`const developer = {
   name: "Harun Abdulwahab",
   role: "Software Engineer",
   philosophy: "Bridges the gap between data and human intent",
@@ -403,8 +398,9 @@ export default function About() {
 };
 
 console.log(developer.execute());`}
-                </code>
-              </pre>
+              </SyntaxHighlighter>
+              {/* </code> */}
+              {/* </pre> */}
             </div>
           </div>
         </section>

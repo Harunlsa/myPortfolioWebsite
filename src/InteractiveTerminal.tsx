@@ -108,7 +108,7 @@ export default function InteractiveTerminal() {
   }, [history]);
 
   return (
-    <div className="bg-surface-container-lowest rounded-xl border border-outline-variant overflow-hidden shadow-2xl w-full text-left">
+    <div className="bg-surface-container-lowest rounded-xl border border-outline-variant overflow-hidden shadow-2xl w-full text-left ">
       {/* Terminal Header */}
       <div className="bg-surface-container px-4 py-2 flex items-center gap-2 border-b border-outline-variant">
         <div className="flex gap-1.5">
@@ -125,7 +125,7 @@ export default function InteractiveTerminal() {
       {/* Terminal Body */}
       <div
         ref={bodyRef}
-        className="p-6 font-code-md text-code-md h-[240px] overflow-y-auto bg-[#0e0e0e] space-y-3 scrollbar-thin scrollbar-thumb-surface-container-high"
+        className="p-6 font-code-md text-code-md h-[240px] overflow-y-auto overflow-x-hidden bg-[#0e0e0e] space-y-3 scrollbar-thin scrollbar-thumb-surface-container-high"
       >
         {history.map((item, idx) => (
           <div key={idx}>
@@ -139,7 +139,7 @@ export default function InteractiveTerminal() {
                 <span className="text-on-surface">$ {item.text}</span>
               </div>
             ) : (
-              <div className="text-on-surface-variant leading-relaxed text-sm">
+              <div className="text-on-surface-variant leading-relaxed text-sm break-words whitespace-pre-wrap">
                 {item.text}
               </div>
             )}
@@ -161,7 +161,7 @@ export default function InteractiveTerminal() {
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            className="flex-1 bg-transparent border-none outline-none focus:ring-0 p-0 text-on-surface caret-primary focus:outline-none"
+            className="flex-1 min-w-0 bg-transparent border-none outline-none focus:ring-0 p-0 text-on-surface caret-primary focus:outline-none"
             autoFocus
           />
         </form>

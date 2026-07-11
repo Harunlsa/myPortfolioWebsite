@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import ShaderBackground from "./ShaderBackground";
 import InteractiveTerminal from "./InteractiveTerminal";
+// import AuroraBackground from "./AuroraBackground";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBootstrap, faReact } from "@fortawesome/free-brands-svg-icons";
 
@@ -62,22 +63,15 @@ function TypingEffect() {
 export default function Home() {
   return (
     <div className="font-body-md text-body-md overflow-x-hidden bg-background text-on-background min-h-screen transition-colors duration-300">
+      {/* Aurora Blurs */}
+      {/* <AuroraBackground /> */}
+
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-20 pb-16 overflow-hidden">
         {/* Full-bleed Shader Background */}
         <ShaderBackground />
 
-        {/* Aurora Accents */}
-        <div className="aurora-blur -top-20 -left-20"></div>
-        <div
-          className="aurora-blur bottom-0 -right-20"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(93, 230, 255, 0.1) 0%, transparent 100%)",
-          }}
-        ></div>
-
-        <div className="max-w-[1200px] mx-auto px-5 md:px-20 text-center relative z-10 w-full flex flex-col items-center">
+        <div className="max-w-max-width mx-auto px-5 md:px-20 text-center relative z-10 w-full flex flex-col items-center">
           <motion.h1
             className="font-headline-xl text-[40px] md:text-5xl text-on-surface hero-title mb-6 font-bold"
             initial={{ opacity: 0, y: -20 }}
@@ -114,7 +108,7 @@ export default function Home() {
               View Projects
             </Link>
             <Link
-              className="w-full sm:w-auto bg-[#ffffff08] backdrop-blur-[16px] border border-primary text-primary px-10 py-4 rounded-xl font-label-caps text-label-caps hover:bg-[#ffffff12] text-center transition-all active:scale-95 duration-200"
+              className="w-full sm:w-auto bg-[#ffffff08] backdrop-blur-lg border border-primary text-primary px-10 py-4 rounded-xl font-label-caps text-label-caps hover:bg-[#ffffff12] text-center transition-all active:scale-95 duration-200"
               to="/contact"
             >
               Contact Me
@@ -141,7 +135,7 @@ export default function Home() {
 
       {/* Stats Section */}
       <section className="py-16 bg-surface-container-lowest relative z-10 border-y border-outline-variant/30 transition-colors duration-300">
-        <div className="max-w-[1200px] mx-auto px-5 md:px-20">
+        <div className="max-w-max-width mx-auto px-5 md:px-20">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center group">
               <div className="font-headline-lg text-3xl text-primary mb-2 group-hover:scale-110 transition-transform font-bold">

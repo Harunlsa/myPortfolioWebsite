@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import ShaderBackground from "./ShaderBackground";
+import { useState } from "react";
+import AuroraBackground from "./AuroraBackground";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -8,18 +8,6 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const [mousePos, setMousePos] = useState({ x: 50, y: 50 });
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      const x = (e.clientX / window.innerWidth) * 100;
-      const y = (e.clientY / window.innerHeight) * 100;
-      setMousePos({ x, y });
-    };
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -41,29 +29,9 @@ export default function Contact() {
 
   return (
     <div className="font-body-md text-body-md bg-transparent text-on-background min-h-screen relative overflow-x-hidden transition-colors duration-300">
-      {/* Aurora Blurs */}
-      <div
-        className="aurora-bg fixed inset-0 w-full h-full opacity-15 pointer-events-none transition-all duration-300 ease-out"
-        style={{
-          background: `radial-gradient(circle at ${mousePos.x}% ${mousePos.y}%, #2563eb, transparent 50%)`,
-          filter: "blur(70px)",
-          zIndex: -1,
-        }}
-      />
-      <div
-        className="aurora-bg fixed inset-0 w-full h-full opacity-20 pointer-events-none transition-all duration-300 ease-out"
-        style={{
-          background: `radial-gradient(circle at ${100 - mousePos.x}% ${100 - mousePos.y}%, #00cbe6, transparent 50%)`,
-          filter: "blur(70px)",
-          zIndex: -1,
-        }}
-      />
+      <AuroraBackground />
 
-      <div className="absolute inset-0 w-full h-full -z-10 pointer-events-none">
-        <ShaderBackground />
-      </div>
-
-      <main className="pt-32 pb-24 px-5 md:px-20 max-w-[1200px] mx-auto relative z-10">
+      <main className="pt-32 pb-24 px-5 md:px-20 max-w-max-width mx-auto relative z-10">
         {/* Hero Section */}
         <div className="text-center mb-20">
           <h1 className="font-headline-xl text-4xl md:text-5xl font-bold mb-6 tracking-tight text-on-background">

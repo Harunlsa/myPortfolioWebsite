@@ -72,12 +72,21 @@
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
   display: inline-block;
   vertical-align: middle;
 }
@@ -86,7 +95,9 @@ body {
   background-color: var(--color-background);
   color: var(--color-on-background);
   scroll-behavior: smooth;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .glass-card {
@@ -103,7 +114,7 @@ body {
 }
 
 .typing-container::after {
-  content: '|';
+  content: "|";
   animation: blink 1s infinite;
 }
 
@@ -111,14 +122,19 @@ body {
   position: absolute;
   width: 40vw;
   height: 40vw;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, rgba(93, 230, 255, 0.05) 50%, transparent 100%);
+  background: radial-gradient(
+    circle,
+    rgba(37, 99, 235, 0.15) 0%,
+    rgba(93, 230, 255, 0.05) 50%,
+    transparent 100%
+  );
   filter: blur(60px);
   z-index: -1;
   pointer-events: none;
 }
 
 .hero-title {
-  text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Custom Markdown Rendering Styles for DesignDoc */
@@ -164,7 +180,9 @@ body {
   color: #5de6ff;
   padding: 0.2rem 0.4rem;
   border-radius: 0.25rem;
-  font-family: JetBrains Mono, monospace;
+  font-family:
+    JetBrains Mono,
+    monospace;
   font-size: 0.875rem;
 }
 .prose pre {
@@ -264,7 +282,12 @@ body {
 }
 
 .light .aurora-blur {
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, rgba(93, 230, 255, 0.02) 50%, transparent 100%);
+  background: radial-gradient(
+    circle,
+    rgba(37, 99, 235, 0.08) 0%,
+    rgba(93, 230, 255, 0.02) 50%,
+    transparent 100%
+  );
 }
 
 .light .prose h1 {
@@ -277,7 +300,8 @@ body {
 .light .prose h3 {
   color: #0f172a;
 }
-.light .prose p, .light .prose ul {
+.light .prose p,
+.light .prose ul {
   color: #475569;
 }
 .light .prose code {
@@ -302,4 +326,3 @@ body {
 .light .prose a:hover {
   color: #1d4ed8;
 }
-
