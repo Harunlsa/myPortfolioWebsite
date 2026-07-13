@@ -9,7 +9,7 @@ import InteractiveTerminal from "./InteractiveTerminal";
 // import { RedhatIcon } from "@dev.icons/react";
 
 import hartImgMain from "./assets/hartImgMain.webp";
-import kssimsImgMain from "./assets/kssimsImgMain.png";
+import kssimsImgMain from "./assets/kssimsImgMainMockup.png";
 import hmsImgMain from "./assets/hmsImgMain.png";
 // import hmsImgMain from "./assets/hmsImgMain.webp";
 // import { faReact } from "@fortawesome/free-solid-svg-icons";
