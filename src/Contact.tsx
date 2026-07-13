@@ -142,7 +142,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7" id="contactForm">
             <div className="p-8 md:p-12 rounded-xl bg-surface-container-lowest">
               {!isSubmitted ? (
                 <form className="space-y-8" onSubmit={handleSubmit}>

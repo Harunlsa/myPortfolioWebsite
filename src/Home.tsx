@@ -8,9 +8,10 @@ import InteractiveTerminal from "./InteractiveTerminal";
 // import { faBootstrap, faReact } from "@fortawesome/free-brands-svg-icons";
 // import { RedhatIcon } from "@dev.icons/react";
 
-import hartImgMain from "./assets/hartImgMain.png";
+import hartImgMain from "./assets/hartImgMain.webp";
 import kssimsImgMain from "./assets/kssimsImgMain.png";
 import hmsImgMain from "./assets/hmsImgMain.png";
+// import hmsImgMain from "./assets/hmsImgMain.webp";
 // import { faReact } from "@fortawesome/free-solid-svg-icons";
 // import { byPrefixAndName } from "@awesome.me/kit-KIT_CODE/icons";
 // import {byPrefixAndName}
@@ -226,16 +227,13 @@ export default function Home() {
                 <div className="flex justify-between items-center mt-auto">
                   <div className="flex -space-x-2">
                     <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
-                      <span className="material-symbols-outlined text-[14px]">
-                        {/* <FontAwesomeIcon icon={faReact} /> */}
-                        <TechIcon icon="react" />
-                      </span>
+                      <TechIcon icon="react" />
                     </div>
                     <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
-                      <span className="material-symbols-outlined text-[14px]">
-                        {/* <FontAwesomeIcon icon={faBootstrap} /> */}
-                        <TechIcon icon="bootstrap" />
-                      </span>
+                      <TechIcon icon="javascript" />
+                    </div>
+                    <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
+                      <TechIcon icon="bootstrap" />
                     </div>
                   </div>
                   <a
@@ -279,35 +277,18 @@ export default function Home() {
                 <div className="flex justify-between items-center mt-auto">
                   <div className="flex -space-x-2">
                     <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
-                      <span className="material-symbols-outlined text-[14px]">
-                        {/* <FontAwesomeIcon icon={faReact} /> */}
-                        <TechIcon icon="react" />
-                      </span>
+                      <TechIcon icon="react" />
                     </div>
                     <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
-                      <span className="devicon text-lg">
-                        <TechIcon icon="typescript" />
-                      </span>
+                      <TechIcon icon="typescript" />
                     </div>
                     <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
-                      <span className="devicon text-lg">
-                        <TechIcon icon="tauri" />
-                      </span>
+                      <TechIcon icon="tauri" />
                     </div>
                     <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
-                      <span className="devicon text-lg">
-                        <TechIcon icon="supabase" />
-                      </span>
+                      <TechIcon icon="supabase" />
                     </div>
                   </div>
-                  {/* <a
-                    className="text-primary hover:text-secondary transition-colors"
-                    href="#"
-                  >
-                    <span className="material-symbols-outlined">
-                      open_in_new
-                    </span>
-                  </a> */}
                 </div>
               </div>
             </div>
