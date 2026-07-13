@@ -7,11 +7,13 @@ import DesignDoc from "./DesignDoc";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Test from "./Test";
+import ScrollToTop from "./ScrollToTop"
 
 export default function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-background text-on-background transition-colors duration-300">
+<ScrollToTop/>
+    <div className="flex flex-col min-h-screen bg-background text-on-background transition-colors duration-300">
         <Navbar />
         <div className="flex-1">
           <Routes>
