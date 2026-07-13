@@ -90,6 +90,10 @@
   display: inline-block;
   vertical-align: middle;
 }
+.devicon {
+  display: inline-block;
+  vertical-align: middle;
+}
 
 body {
   background-color: var(--color-background);

@@ -53,7 +53,7 @@ export default function Contact() {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 md:w-8 md:h-8 rounded-lg shrink-0 bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                     <span className="material-symbols-outlined">mail</span>
                   </div>
                   <div>
@@ -61,7 +61,7 @@ export default function Contact() {
                       Email
                     </p>
                     <a
-                      className="font-code-md text-code-md text-on-surface hover:text-secondary transition-colors"
+                      className="font-code-md text-code-md text-on-surface hover:text-secondary transition-colors "
                       href="mailto:harunlabdulwahab@gmail.com"
                     >
                       harunlabdulwahab@gmail.com
@@ -70,7 +70,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-lg shrink-0 bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                     <span className="material-symbols-outlined">call</span>
                   </div>
                   <div>
@@ -89,7 +89,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-lg shrink-0 bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                     <span className="material-symbols-outlined">terminal</span>
                   </div>
                   <div>
@@ -108,7 +108,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12  rounded-lg shrink-0 bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                     <span className="material-symbols-outlined">link</span>
                   </div>
                   <div>

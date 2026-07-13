@@ -4,10 +4,13 @@ import { motion } from "framer-motion";
 import ShaderBackground from "./ShaderBackground";
 import InteractiveTerminal from "./InteractiveTerminal";
 // import AuroraBackground from "./AuroraBackground";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBootstrap, faReact } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBootstrap, faReact } from "@fortawesome/free-brands-svg-icons";
+// import { RedhatIcon } from "@dev.icons/react";
 
 import hartImgMain from "./assets/hartImgMain.png";
+import kssimsImgMain from "./assets/kssimsImgMain.png";
+import hmsImgMain from "./assets/hmsImgMain.png";
 // import { faReact } from "@fortawesome/free-solid-svg-icons";
 // import { byPrefixAndName } from "@awesome.me/kit-KIT_CODE/icons";
 // import {byPrefixAndName}
@@ -204,7 +207,7 @@ export default function Home() {
                     backgroundImage: `url(${hartImgMain})`,
                   }}
                 ></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-background/80 to-transparent"></div>
               </div>
               <div className="p-8 flex-1 flex flex-col">
                 <div className="flex gap-2 mb-4">
@@ -224,12 +227,14 @@ export default function Home() {
                   <div className="flex -space-x-2">
                     <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
                       <span className="material-symbols-outlined text-[14px]">
-                        <FontAwesomeIcon icon={faReact} />
+                        {/* <FontAwesomeIcon icon={faReact} /> */}
+                        <TechIcon icon="react" />
                       </span>
                     </div>
                     <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
                       <span className="material-symbols-outlined text-[14px]">
-                        <FontAwesomeIcon icon={faBootstrap} />
+                        {/* <FontAwesomeIcon icon={faBootstrap} /> */}
+                        <TechIcon icon="bootstrap" />
                       </span>
                     </div>
                   </div>
@@ -252,47 +257,57 @@ export default function Home() {
                 <div
                   className="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
                   style={{
-                    backgroundImage:
-                      "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBO74uy92PiYX19QSM1ZbhLxGq5_cZ2g4i1BK3_SVCuQkVj96V2xwlCUkGNJBZjsp1AMyC93BjkXO89HGZ_u4P7ubKtN2M6O8PeQIvuCGnQW7bn26w_1BMOBZhwtWf6QFv7kxkm2otnMf-kEvGn91vSqsfiDEX0MFHBa1VCsQRViAgVz0ZjuyeH8_Ranrob2GryHez1Vq0NtY_VDvB2_IjQ3dME2cyWCZfyLZWhwrMREBoiQCQILc_M0Q')",
+                    backgroundImage: `url(${kssimsImgMain})`,
                   }}
                 ></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-background/80 to-transparent"></div>
               </div>
               <div className="p-8 flex-1 flex flex-col">
                 <div className="flex gap-2 mb-4">
                   <span className="px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary font-code-md text-[10px] uppercase">
-                    SaaS
+                    Hybrid Desktop/Web Application
                   </span>
                 </div>
                 <h3 className="font-headline-lg text-xl text-on-surface mb-3 font-semibold">
-                  Football Pitch System
+                  Student Information Management System
                 </h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mb-6 flex-1">
-                  An automated booking and management solution for sports
-                  facilities with real-time availability tracking and payment
-                  integration.
+                  A Student Information Management System designed to modernise
+                  educational administration across secondary schools in Kano
+                  State.
                 </p>
                 <div className="flex justify-between items-center mt-auto">
                   <div className="flex -space-x-2">
                     <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
                       <span className="material-symbols-outlined text-[14px]">
-                        calendar_today
+                        {/* <FontAwesomeIcon icon={faReact} /> */}
+                        <TechIcon icon="react" />
                       </span>
                     </div>
                     <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
-                      <span className="material-symbols-outlined text-[14px]">
-                        payments
+                      <span className="devicon text-lg">
+                        <TechIcon icon="typescript" />
+                      </span>
+                    </div>
+                    <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
+                      <span className="devicon text-lg">
+                        <TechIcon icon="tauri" />
+                      </span>
+                    </div>
+                    <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
+                      <span className="devicon text-lg">
+                        <TechIcon icon="supabase" />
                       </span>
                     </div>
                   </div>
-                  <a
+                  {/* <a
                     className="text-primary hover:text-secondary transition-colors"
                     href="#"
                   >
                     <span className="material-symbols-outlined">
                       open_in_new
                     </span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -303,46 +318,51 @@ export default function Home() {
                 <div
                   className="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
                   style={{
-                    backgroundImage:
-                      "url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5m3rKSu8NXzBJPPA1FSE1oWXV33NM_rOfQuDV4SzBP3CeVsEbGK1yOdi0Ye3P-Asi-6kEZfqoLbl83Z_lYSS8hbMQpWHKqv5exSodkFXj0kLzN45jJ_3ith2hm_uV2VniT8SebAp1MubDU_FcjUcZJ-jrOrT6TcIC74FF9X7t5crFI5KqvjZbF2eApyf-88Exj60xcjnd3OXVnxIAbq-9lTr71Px0PsUfGoeGb24NxN6mUtyFBDlXMQ')",
+                    backgroundImage: `url(${hmsImgMain})`,
                   }}
                 ></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-background/80 to-transparent"></div>
               </div>
               <div className="p-8 flex-1 flex flex-col">
                 <div className="flex gap-2 mb-4">
                   <span className="px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary font-code-md text-[10px] uppercase">
-                    AI / Python
+                    Desktop Application
                   </span>
                 </div>
                 <h3 className="font-headline-lg text-xl text-on-surface mb-3 font-semibold">
-                  FPL AI Assistant
+                  Hospital Management System
                 </h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mb-6 flex-1">
-                  A predictive modeling tool using machine learning to optimize
-                  Fantasy Premier League squad selection and transfer strategy.
+                  A desktop-first hospital management system designed to
+                  streamline clinical workflows, digitise records, and improve
+                  operational efficiency.
                 </p>
                 <div className="flex justify-between items-center mt-auto">
                   <div className="flex -space-x-2">
                     <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
-                      <span className="material-symbols-outlined text-[14px]">
-                        psychology
-                      </span>
+                      <TechIcon icon="react" />
                     </div>
                     <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
-                      <span className="material-symbols-outlined text-[14px]">
-                        monitoring
-                      </span>
+                      <TechIcon icon="typescript" />
+                    </div>
+                    <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
+                      <TechIcon icon="tailwindcss" />
+                    </div>
+                    <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
+                      <TechIcon icon="tauri" />
+                    </div>
+                    <div className="w-8 h-8 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center">
+                      <TechIcon icon="sqlite" />
                     </div>
                   </div>
-                  <a
+                  {/* <a
                     className="text-primary hover:text-secondary transition-colors"
                     href="#"
                   >
                     <span className="material-symbols-outlined">
                       open_in_new
                     </span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -351,4 +371,11 @@ export default function Home() {
       </section>
     </div>
   );
+}
+type TechIconProps = {
+  icon: string;
+  coloured?: boolean;
+};
+function TechIcon({ icon, coloured = false }: TechIconProps) {
+  return <i className={`devicon-${icon}-plain ${coloured ? "colored" : ""}`} />;
 }

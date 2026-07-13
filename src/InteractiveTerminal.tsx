@@ -125,7 +125,7 @@ export default function InteractiveTerminal() {
       {/* Terminal Body */}
       <div
         ref={bodyRef}
-        className="p-6 font-code-md text-code-md h-[240px] overflow-y-auto overflow-x-hidden bg-[#0e0e0e] space-y-3 scrollbar-thin scrollbar-thumb-surface-container-high"
+        className="p-6 font-code-md text-code-md h-60 overflow-y-auto overflow-x-hidden bg-surface-container-lowest space-y-3 scrollbar-thin scrollbar-thumb-surface-container-high"
       >
         {history.map((item, idx) => (
           <div key={idx}>

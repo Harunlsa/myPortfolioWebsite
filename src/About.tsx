@@ -1,5 +1,6 @@
 import AuroraBackground from "./AuroraBackground";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 // import ShaderBackground from "./ShaderBackground";
 
