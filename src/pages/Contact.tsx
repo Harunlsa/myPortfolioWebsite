@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AuroraBackground from "./AuroraBackground";
+import AuroraBackground from "../components/AuroraBackground";
 
 export default function Contact() {
   const [name, setName] = useState("");

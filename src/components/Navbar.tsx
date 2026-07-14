@@ -1,17 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useTheme } from "../hooks/useTheme";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  // Initialize theme from localStorage or system preference
-  const [theme] = useState<"light" | "dark">(() => {
-    const saved = localStorage.getItem("theme");
-    if (saved === "light" || saved === "dark") return saved;
-    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    return systemPrefersDark ? "dark" : "light";
-  });
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,24 +14,6 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Update root element class when theme changes
-  useEffect(() => {
-    const root = document.documentElement;
-    if (theme === "light") {
-      root.classList.remove("dark");
-      root.classList.add("light");
-      localStorage.setItem("theme", "light");
-    } else {
-      root.classList.remove("light");
-      root.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    }
-  }, [theme]);
-
-  // const toggleTheme = () => {
-  //   setTheme((prev) => (prev === "light" ? "dark" : "light"));
-  // };
 
   const getNavLinkClass = ({ isActive }: { isActive: boolean }) =>
     isActive
@@ -79,8 +55,8 @@ export default function Navbar() {
 
         {/* Actions (Desktop: Contacts + Theme Toggle. Mobile: Theme Toggle + Hamburger) */}
         <div className="flex items-center gap-2 md:gap-4">
-          {/* Theme Toggle Button (Commented out for now)
-          <button
+          {/* Theme Toggle Button */}
+          {/* <button
             onClick={toggleTheme}
             className="flex items-center text-on-surface-variant hover:text-primary transition-colors p-2 rounded-full hover:bg-surface-container-high/30 cursor-pointer"
             aria-label="Toggle Theme"
@@ -88,8 +64,7 @@ export default function Navbar() {
             <span className="material-symbols-outlined text-[22px]">
               {theme === "light" ? "dark_mode" : "light_mode"}
             </span>
-          </button>
-          */}
+          </button> */}
 
           {/* Desktop Contact icons */}
           <div className="hidden md:flex items-center gap-4">
@@ -137,14 +112,18 @@ export default function Navbar() {
       {/* Mobile Nav Drawer */}
       <div
         className={`fixed inset-x-0 top-20 bg-background/95 backdrop-blur-xl border-b border-outline-variant/30 transition-all duration-300 md:hidden overflow-hidden ${
-          isMobileMenuOpen ? "max-h-[320px] opacity-100 py-6 shadow-lg" : "max-h-0 opacity-0 py-0 pointer-events-none"
+          isMobileMenuOpen
+            ? "max-h-[320px] opacity-100 py-6 shadow-lg"
+            : "max-h-0 opacity-0 py-0 pointer-events-none"
         }`}
       >
         <div className="flex flex-col items-center gap-6">
           <NavLink
             className={({ isActive }) =>
               `font-body-md text-lg tracking-wide transition-colors ${
-                isActive ? "text-primary font-bold" : "text-on-surface-variant hover:text-primary"
+                isActive
+                  ? "text-primary font-bold"
+                  : "text-on-surface-variant hover:text-primary"
               }`
             }
             to="/"
@@ -156,7 +135,9 @@ export default function Navbar() {
           <NavLink
             className={({ isActive }) =>
               `font-body-md text-lg tracking-wide transition-colors ${
-                isActive ? "text-primary font-bold" : "text-on-surface-variant hover:text-primary"
+                isActive
+                  ? "text-primary font-bold"
+                  : "text-on-surface-variant hover:text-primary"
               }`
             }
             to="/about"
@@ -167,7 +148,9 @@ export default function Navbar() {
           <NavLink
             className={({ isActive }) =>
               `font-body-md text-lg tracking-wide transition-colors ${
-                isActive ? "text-primary font-bold" : "text-on-surface-variant hover:text-primary"
+                isActive
+                  ? "text-primary font-bold"
+                  : "text-on-surface-variant hover:text-primary"
               }`
             }
             to="/portfolio"
@@ -178,7 +161,9 @@ export default function Navbar() {
           <NavLink
             className={({ isActive }) =>
               `font-body-md text-lg tracking-wide transition-colors ${
-                isActive ? "text-primary font-bold" : "text-on-surface-variant hover:text-primary"
+                isActive
+                  ? "text-primary font-bold"
+                  : "text-on-surface-variant hover:text-primary"
               }`
             }
             to="/contact"

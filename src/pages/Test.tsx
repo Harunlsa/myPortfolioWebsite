@@ -14,8 +14,8 @@
  * over and I'll extend this component to match.
  */
 
-import AuroraBackground from "./AuroraBackground";
-// import ShaderBackground from "./ShaderBackgrsound";
+import AuroraBackground from "../components/AuroraBackground";
+// import ShaderBackground from "../components/ShaderBackground";
 
 export default function Test() {
   return (

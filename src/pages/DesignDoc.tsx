@@ -1,5 +1,5 @@
 import ReactMarkdown from "react-markdown";
-import designContent from "./DESIGN.md?raw";
+import designContent from "../DESIGN.md?raw";
 
 export default function DesignDoc() {
   return (
