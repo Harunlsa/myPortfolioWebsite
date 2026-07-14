@@ -20,32 +20,6 @@ export default function Footer() {
             © 2026 Harun Abdulwahab.
           </p>
         </div>
-        <div className="flex gap-6">
-          <a
-            className="text-on-surface-variant hover:text-secondary transition-colors group"
-            href="#"
-          >
-            <span className="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">
-              terminal
-            </span>
-          </a>
-          <a
-            className="text-on-surface-variant hover:text-secondary transition-colors group"
-            href="#"
-          >
-            <span className="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">
-              code
-            </span>
-          </a>
-          <a
-            className="text-on-surface-variant hover:text-secondary transition-colors group"
-            href="#"
-          >
-            <span className="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">
-              mail
-            </span>
-          </a>
-        </div>
         <div className="flex gap-8">
           <a
             className="text-on-surface-variant hover:text-secondary font-body-sm text-body-sm transition-colors duration-300"

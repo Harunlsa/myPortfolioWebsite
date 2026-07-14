@@ -53,7 +53,7 @@ export default function Contact() {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 md:w-8 md:h-8 rounded-lg shrink-0 bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg shrink-0 bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                     <span className="material-symbols-outlined">mail</span>
                   </div>
                   <div>
@@ -61,7 +61,7 @@ export default function Contact() {
                       Email
                     </p>
                     <a
-                      className="font-code-md text-code-md text-on-surface hover:text-secondary transition-colors "
+                      className="text-wrap font-code-md text-code-md text-on-surface hover:text-secondary transition-colors "
                       href="mailto:harunlabdulwahab@gmail.com"
                     >
                       harunlabdulwahab@gmail.com
@@ -70,7 +70,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-lg shrink-0 bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg shrink-0 bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                     <span className="material-symbols-outlined">call</span>
                   </div>
                   <div>
@@ -81,7 +81,7 @@ export default function Contact() {
                       </span>
                     </p>
                     <a
-                      className="font-code-md text-code-md text-on-surface hover:text-secondary transition-colors"
+                      className="text-wrap font-code-md text-code-md text-on-surface hover:text-secondary transition-colors"
                       href="tel:+2349020838258"
                     >
                       +234 902 083 8258
@@ -89,7 +89,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-lg shrink-0 bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg shrink-0 bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                     <span className="material-symbols-outlined">terminal</span>
                   </div>
                   <div>
@@ -97,7 +97,7 @@ export default function Contact() {
                       GitHub
                     </p>
                     <a
-                      className="font-code-md text-code-md text-on-surface hover:text-secondary transition-colors"
+                      className="text-wrap font-code-md text-code-md text-on-surface hover:text-secondary transition-colors"
                       href="https://github.com/harunlsa"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -108,7 +108,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-center gap-4 group">
-                  <div className="w-12 h-12  rounded-lg shrink-0 bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12  rounded-lg shrink-0 bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                     <span className="material-symbols-outlined">link</span>
                   </div>
                   <div>
@@ -116,7 +116,7 @@ export default function Contact() {
                       LinkedIn
                     </p>
                     <a
-                      className="font-code-md text-code-md text-on-surface hover:text-secondary transition-colors"
+                      className="text-wrap font-code-md text-code-md text-on-surface hover:text-secondary transition-colors"
                       href="https://linkedin.com/in/hlabdulwahab"
                       target="_blank"
                       rel="noopener noreferrer"
