@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { useTheme } from "../hooks/useTheme";
+// import { useTheme } from "../hooks/useTheme";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
+  // const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
