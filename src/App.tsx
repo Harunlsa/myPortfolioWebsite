@@ -15,9 +15,13 @@ export default function App() {
     <ThemeProvider>
       <Router>
         <ScrollToTop />
+        {/* Skip to content — keyboard accessibility */}
+        <a href="#main-content" className="skip-to-content">
+          Skip to content
+        </a>
         <div className="flex flex-col min-h-screen bg-background text-on-background transition-colors duration-300">
           <Navbar />
-          <div className="flex-1">
+          <div id="main-content" className="flex-1">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />

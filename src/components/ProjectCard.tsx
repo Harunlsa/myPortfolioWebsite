@@ -5,6 +5,7 @@ export interface Project {
   category: string;
   description: string;
   image: string;
+  imageAlt: string;
   techStack: string[];
   link?: string;
 }
@@ -16,14 +17,13 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="glass-card rounded-2xl overflow-hidden flex flex-col">
-      <div className="h-56 relative overflow-hidden group">
-        <div
-          className="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
-          style={{
-            backgroundImage: `url(${project.image})`,
-          }}
-        ></div>
-        <div className="absolute inset-0 bg-linear-to-t from-background/80 to-transparent"></div>
+      <div className="h-56 relative overflow-hidden">
+        <img
+          src={project.image}
+          alt={project.imageAlt}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-linear-to-t from-background/80 to-transparent" aria-hidden="true" />
       </div>
       <div className="p-8 flex-1 flex flex-col">
         <div className="flex gap-2 mb-4">
@@ -54,8 +54,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`View ${project.title} (opens in new tab)`}
             >
-              <span className="material-symbols-outlined">open_in_new</span>
+              <span className="material-symbols-outlined" aria-hidden="true">open_in_new</span>
             </a>
           )}
         </div>

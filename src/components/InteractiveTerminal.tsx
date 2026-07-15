@@ -58,23 +58,25 @@ export default function InteractiveTerminal() {
         text: (
           <div className="space-y-1">
             <p className="font-semibold text-primary">
-              1. Plastic Company ERP System
+              1. Hart Industries Website
             </p>
             <p className="pl-4 text-on-surface-variant text-sm">
-              A comprehensive manufacturing operational control center built to
-              optimize automation and inventory workflows.
+              A modern, responsive website built to showcase products, company
+              information, and contact details.
             </p>
             <p className="font-semibold text-primary">
-              2. Football Pitch System
+              2. Student Information Management System
             </p>
             <p className="pl-4 text-on-surface-variant text-sm">
-              SaaS scheduler with real-time slot bookings and automated checkout
-              systems.
+              A Student Information Management System designed to modernise
+              educational administration across secondary schools in Kano State.
             </p>
-            <p className="font-semibold text-primary">3. FPL AI Assistant</p>
+            <p className="font-semibold text-primary">
+              3. Hospital Management System
+            </p>
             <p className="pl-4 text-on-surface-variant text-sm">
-              A predictive machine learning system utilizing player history data
-              for optimal Fantasy Premier League selections.
+              A desktop-first system designed to streamline clinical workflows,
+              digitise records, and improve operational efficiency.
             </p>
           </div>
         ),
@@ -161,7 +163,7 @@ export default function InteractiveTerminal() {
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            className="flex-1 min-w-0 bg-transparent border-none outline-none focus:ring-0 p-0 text-on-surface caret-primary focus:outline-none"
+            className="flex-1 min-w-0 bg-transparent border-none outline-none focus:ring-0 p-0 text-on-surface caret-primary focus:outline-none!"
             autoFocus
           />
         </form>

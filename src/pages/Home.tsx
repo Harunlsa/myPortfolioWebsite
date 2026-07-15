@@ -32,6 +32,7 @@ const PROJECTS: Project[] = [
     description:
       "A modern, responsive website built for Hart Industries to showcase its products, company information, and contact details.",
     image: hartImgMain,
+    imageAlt: "Hart website homepage",
     techStack: ["react", "javascript", "bootstrap"],
     link: "https://hart-industries.com",
   },
@@ -41,6 +42,7 @@ const PROJECTS: Project[] = [
     description:
       "A Student Information Management System designed to modernise educational administration across secondary schools in Kano State.",
     image: kssimsImgMain,
+    imageAlt: "Student Information Management System dashboard",
     techStack: ["react", "typescript", "tauri", "supabase"],
   },
   {
@@ -49,6 +51,7 @@ const PROJECTS: Project[] = [
     description:
       "A desktop-first hospital management system designed to streamline clinical workflows, digitise records, and improve operational efficiency.",
     image: hmsImgMain,
+    imageAlt: "Hostpital Management System Patients Page",
     techStack: ["react", "typescript", "tailwindcss", "tauri", "sqlite"],
   },
 ];
